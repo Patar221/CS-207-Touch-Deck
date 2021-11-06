@@ -16,22 +16,17 @@ NexTouch *nex_listen_list[] =
 void b0PopCallback(void *ptr)
 {
   dbSerialPrintln("b0PopCallback");
-  HMISerial.print("page0.bco=2016");
-  HMISerial.write(0xff);
-  HMISerial.write(0xff);
-  HMISerial.write(0xff);
+  sendTouchDeckCommand(1);
 }
 
 void b1PopCallback(void *ptr)
 {
   dbSerialPrintln("b0PopCallback");
-  HMISerial.print("page0.bco=50");
-  HMISerial.write(0xff);
-  HMISerial.write(0xff);
-  HMISerial.write(0xff);
+  sendTouchDeckCommand(2);
 }
 
 void setup() {
+  Serial.begin(9600);
   HMISerial.begin(9600);
   nexInit();
   b0.attachPop(b0PopCallback, &b0);
@@ -41,4 +36,11 @@ void setup() {
 
 void loop() {
   nexLoop(nex_listen_list);
+  //Serial.print("Hello World\n");
+}
+
+void sendTouchDeckCommand(int num){
+  Serial.print("touchDeck(");
+  Serial.print(num);
+  Serial.println(")");
 }
