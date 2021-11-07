@@ -2,6 +2,19 @@ import serial
 import re
 import webbrowser
 import subprocess
+import keyboard
+
+def openBrwoser(url):
+    webbrowser.open(url)
+
+def openFile(path):
+    subprocess.call(path)
+
+def sendKey(keys):
+  keyboard.send(keys)
+
+def typeText(text):
+    keyboard.write(text)
 
 ser = serial.Serial('COM5', 9600)
 
@@ -9,44 +22,44 @@ while True:
     line = ser.readline().decode('utf-8')
     touchDeckCommands = re.findall(r'(?<=touchDeck\()(.*?)(?=\))', line)
 
-    for command in touchDeckCommands:
-        match command:
+    for button in touchDeckCommands:
+        match button:
             case '1':
-                print(command)
-                webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                print(button)
+                openBrwoser("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
             case '2':
-                subprocess.call(['C:\Program Files (x86)\Steam\steam.exe'])
+                openFile(['C:\Program Files (x86)\Steam\steam.exe'])
             case '3':
-                print(command)
+                print(button)
             case '4':
-                print(command)
+                print(button)
             case '5':
-                print(command)
+                print(button)
             case '6':
-                print(command)
+                print(button)
             case '7':
-                print(command)
+                typeText('Hello')
             case '8':
-                print(command)
+                print(button)
             case '9':
-                print(command)
+                print(button)
             case '10':
-                print(command)
+                print(button)
             case '11':
-                print(command)
+                print(button)
             case '12':
-                print(command)
+                print(button)
             case '13':
-                print(command)
+                sendKey('shift+F11')
             case '14':
-                print(command)
+                sendKey('shift+F12')
             case '15':
-                print(command)
+                print(button)
             case '16':
-                print(command)
+                print(button)
             case '17':
-                print(command)
+                print(button)
             case '18':
-                print(command)
+                print(button)
             case _:
                 print("No Command Found")
