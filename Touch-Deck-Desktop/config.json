@@ -1,0 +1,74 @@
+{
+  "1": {
+    "command": "openBrowser",
+    "argument": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "2":{
+    "command": "openFile",
+    "argument": "C:\\Program Files (x86)\\Steam\\steam.exe"
+  },
+  "3":{
+    "command": "typeTextAndSend",
+    "argument": "-counter add 2"
+  },
+  "4":{
+    "command": "",
+    "argument": ""
+  },
+  "5":{
+    "command": "",
+    "argument": ""
+  },
+  "6":{
+    "command": "",
+    "argument": ""
+  },
+  "7":{
+    "command": "",
+    "argument": ""
+  },
+  "8":{
+    "command": "",
+    "argument": ""
+  },
+  "9":{
+    "command": "",
+    "argument": ""
+  },
+  "10":{
+    "command": "",
+    "argument": ""
+  },
+  "11":{
+    "command": "",
+    "argument": ""
+  },
+  "12":{
+    "command": "sendKey",
+    "argument": "shift+F11"
+  },
+  "13":{
+    "command": "sendKey",
+    "argument": "shift+F12"
+  },
+  "14":{
+    "command": "",
+    "argument": ""
+  },
+  "15":{
+    "command": "",
+    "argument": ""
+  },
+  "16":{
+    "command": "",
+    "argument": ""
+  },
+  "17":{
+    "command": "",
+    "argument": ""
+  },
+  "18":{
+    "command": "",
+    "argument": ""
+  }
+}
