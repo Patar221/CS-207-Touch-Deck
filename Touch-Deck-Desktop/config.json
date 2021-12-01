@@ -1,19 +1,19 @@
 {
   "1": {
     "command": "openBrowser",
-    "argument": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "argument": "https://urcourses.uregina.ca/"
   },
   "2":{
-    "command": "openFile",
-    "argument": "C:\\Program Files (x86)\\Steam\\steam.exe"
+    "command": "openBrowser",
+    "argument": "https://www.uregina.ca/"
   },
   "3":{
-    "command": "typeTextAndSend",
-    "argument": "-counter add 2"
+    "command": "openFile",
+    "argument": "C:\\Users\\Patar\\AppData\\Local\\slack\\slack.exe"
   },
   "4":{
-    "command": "",
-    "argument": ""
+    "command": "openFile",
+    "argument": "C:\\Program Files (x86)\\Arduino\\arduino.exe"
   },
   "5":{
     "command": "",
@@ -24,40 +24,40 @@
     "argument": ""
   },
   "7":{
-    "command": "",
-    "argument": ""
+    "command": "typeText",
+    "argument": "Hello World!"
   },
   "8":{
-    "command": "",
-    "argument": ""
+    "command": "typeText",
+    "argument": "This is a sample text"
   },
   "9":{
-    "command": "",
-    "argument": ""
+    "command": "typeTextAndSend",
+    "argument": "Hello World!"
   },
   "10":{
-    "command": "",
-    "argument": ""
+    "command": "typeTextAndSend",
+    "argument": "This is a sample text that hits enter after"
   },
   "11":{
     "command": "",
     "argument": ""
   },
   "12":{
-    "command": "sendKey",
-    "argument": "shift+F11"
+    "command": "",
+    "argument": ""
   },
   "13":{
     "command": "sendKey",
-    "argument": "shift+F12"
+    "argument": "shift+F11"
   },
   "14":{
-    "command": "",
-    "argument": ""
+    "command": "sendKey",
+    "argument": "shift+F12"
   },
   "15":{
-    "command": "",
-    "argument": ""
+    "command": "sendKey",
+    "argument": "control+shift+esc"
   },
   "16":{
     "command": "",
