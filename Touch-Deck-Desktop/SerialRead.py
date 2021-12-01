@@ -35,9 +35,12 @@ while True:
     touchDeckCommands = re.findall(r'(?<=touchDeck\()(.*?)(?=\))', line)
 
     for button in touchDeckCommands:
-        # Load command information from json
-        command = config[button]['command']
-        arg = config[button]['argument']
+        try:
+            # Load command information from json
+            command = config[button]['command']
+            arg = config[button]['argument']
 
-        # Call the command loaded from the json file
-        eval(command + f"('{arg}')")
+            # Call the command loaded from the json file
+            eval(command + f"('{arg}')")
+        except:
+            print("An exception occurred")
