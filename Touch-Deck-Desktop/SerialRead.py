@@ -1,7 +1,7 @@
 import serial
 import re
 import webbrowser
-import subprocess
+import os
 import keyboard
 import json
 
@@ -10,7 +10,8 @@ def openBrowser(url):
     webbrowser.open(url)
 
 def openFile(path):
-    subprocess.call(path)
+    path = os.path.normpath(path)
+    os.startfile(path)
 
 def sendKey(keys):
     keyboard.send(keys)

@@ -9,11 +9,11 @@
   },
   "3":{
     "command": "openFile",
-    "argument": "C:\\Users\\Patar\\AppData\\Local\\slack\\slack.exe"
+    "argument": "C:\\\\Users\\\\Patar\\\\AppData\\\\Local\\\\slack\\\\slack.exe"
   },
   "4":{
     "command": "openFile",
-    "argument": "C:\\Program Files (x86)\\Arduino\\arduino.exe"
+    "argument": "C:\\\\Program Files (x86)\\\\Arduino\\\\arduino.exe"
   },
   "5":{
     "command": "",
